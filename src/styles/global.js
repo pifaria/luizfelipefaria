@@ -34,4 +34,8 @@ export default createGlobalStyle`
     img{
         width: 15%;
     }
+
+    li{
+        list-style: none;
+    }
 `
