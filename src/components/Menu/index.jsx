@@ -2,12 +2,14 @@ import { Container, Content } from "./styles";
 import pi from '../../assets/imgs/pi.jpg'
 import {AiFillGithub, AiOutlineLinkedin} from 'react-icons/ai'
 
-const Menu = () => {
+const Menu = ({id= 'modal',onClose = () => {}}) => {
+    
+
     return(
         <Container>
             <Content>
                 <header>
-                    <label>X</label>
+                    <label onClick={onClose}>X</label>
                     <img alt="Logo" src={pi}/>
                     <div>
                         <h1>Luiz Felipe de Faria</h1>
