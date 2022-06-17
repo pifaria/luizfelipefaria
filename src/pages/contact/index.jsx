@@ -16,6 +16,8 @@ const Contact = () => {
                         <p> 
                             Estou interessado em oportunidades como freelancer ou CLT - 
                             para qualquer tipo de projeto front-end.
+                        </p>
+                        <p>
                             Se tiver aqui por sugestões ou dúvida, vamos trocar uma ideia. 
                             Entre em contato comigo pelo formulário abaixo.
                         </p>

@@ -1,3 +1,4 @@
+import Catalogue from "../../components/catalogue"
 import Header from "../../components/Header"
 import Tags from "../../components/Tags"
 import { Container, Content } from "./styles"
@@ -10,7 +11,7 @@ const Profile = () => {
                 <main>
                     <span>{`<${Tags.h1}>`}</span>
                         <h1>Eu, eu mesmo e o Pi</h1>
-                    <span>{`<${Tags.h1}>`}</span>
+                    <span>{`</${Tags.h1}>`}</span>
                     <span>{`<${Tags.article}>`}</span>
                         <article>
                             Meu nome é Luiz Felipe de Faria Machado, mas raramente sou chamado pelo nome, sou mais conhecido como Pi; 
@@ -30,7 +31,10 @@ const Profile = () => {
                             Sou grande fã de arte visual, desde pequeno gosto de desenhar e criar ilustrações. 
                             Atualmente é o meu principal hobby, e com isso comecei produzir estampas de camisetas para a loja stoned shop.
                         </article>
-                    <span>{`<${Tags.article}>`}</span>
+                    <span>{`</${Tags.article}>`}</span>
+                    <span>{`<${Tags.ul}>`}</span>
+                        <Catalogue/>
+                    <span>{`</${Tags.ul}>`}</span>
                 </main>
             </Content>
         </Container>

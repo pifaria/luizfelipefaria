@@ -7,11 +7,16 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     main{
+        margin-top: 32px;
         width: 80%;
         display: flex;
         flex-direction: column;
+
+        h1{
+            color: var(--blue);
+        }
 
         p{
             font-size: 0.7rem;
