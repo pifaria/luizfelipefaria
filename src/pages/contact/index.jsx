@@ -1,3 +1,4 @@
+import Form from '../../components/form'
 import Header from '../../components/Header'
 import Tags from '../../components/Tags'
 import { Container, Content } from './styles'
@@ -19,6 +20,9 @@ const Contact = () => {
                             Entre em contato comigo pelo formulário abaixo.
                         </p>
                     <span>{`<${Tags.p}>`}</span>
+                    <span>{`<${Tags.form}>`}</span>
+                        <Form/>
+                    <span>{`<${Tags.form}>`}</span>
                 </main>
             </Content>
         </Container>

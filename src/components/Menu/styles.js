@@ -4,11 +4,13 @@ export const Container = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
-
 `
 
 export const Content = styled.section`
     height: 100vh;
+    position: fixed;
+    display: block;
+    background-color: var(--dark-purple);
 
     header{
         display: flex;

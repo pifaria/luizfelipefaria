@@ -2,11 +2,13 @@ import Header from "../../components/Header";
 import { Container, Content } from "./styles";
 import Tags from "../../components/Tags";
 import Button from '../../components/Button'
+import Menu from '../../components/Menu'
 
 const Home = () => {
     return (
         <Container>
             <Content>
+                <Menu show={true}/>
                 <Header/>
                 <main>
                     <section>

@@ -5,7 +5,8 @@ const Tags = {
     p: "p",
     article: "article",
     ul: "ul",
-    li: "li"
+    li: "li",
+    form: "form"
 
 }
 

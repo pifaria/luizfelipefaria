@@ -14,7 +14,7 @@ export const MenuProvider = ({children}) => {
     }
 
     return (
-        <MenuContext.Provider value={{openModal, closeModal}}>
+        <MenuContext.Provider value={{openModal, closeModal, modal}}>
             {children}
         </MenuContext.Provider>
     )

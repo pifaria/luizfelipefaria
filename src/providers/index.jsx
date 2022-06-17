@@ -1,8 +1,10 @@
+import { MenuProvider } from "./menu"
+
 const Providers = ({children}) => {
     return(
-        <div>
+        <MenuProvider>
             {children}
-        </div>
+        </MenuProvider>
     )
 }
 
