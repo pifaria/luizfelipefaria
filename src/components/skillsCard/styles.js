@@ -27,4 +27,13 @@ export const Content = styled.div`
     p, li{
         color: var(--purple);
     }
+
+    @media (min-width: 700px){
+        justify-content: flex-start;
+
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 `

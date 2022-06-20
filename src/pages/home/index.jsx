@@ -3,13 +3,25 @@ import { Container, Content } from "./styles";
 import Tags from "../../components/Tags";
 import Button from '../../components/Button'
 import Menu from '../../components/Menu'
+import { useMenu } from "../../providers/menu";
+import Aside from "../../components/aside";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
+    const { modal } = useMenu()
+
+    const history = useHistory()
+
+    const handleRedirect = () => {
+        return history.push("/contact")
+    }
+
     return (
         <Container>
             <Content>
-                <Menu show={true}/>
+                {modal && <Menu/>}
                 <Header/>
+                <Aside/>
                 <main>
                     <section>
                         <span>{`<${Tags.h1}>`}</span>
@@ -21,7 +33,7 @@ const Home = () => {
                         <span>{`<${Tags.p}>`}</span>
                         <p>Front End developer | Especialidade em React.js</p>
                         <span>{`<${Tags.p}>`}</span>
-                        <Button>Fale comigo</Button>
+                        <Button onClick={handleRedirect}>Fale comigo</Button>
                     </section>
                 </main>
             </Content>

@@ -25,4 +25,14 @@ export const Content = styled.div`
         }
     }
 
+    @media (min-width: 700px){
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+
+        main{
+            width: 65%;
+        }
+    }
 `

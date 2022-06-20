@@ -22,4 +22,13 @@ export const Content = styled.div`
             font-size: 0.7rem;
         }
     }
+
+    @media (min-width: 700px){
+        display: flex;
+        flex-direction: row;
+       
+        main{
+            width: 50%;
+        }
+    }
 `

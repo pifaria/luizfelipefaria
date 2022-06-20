@@ -2,12 +2,19 @@ import Form from '../../components/form'
 import Header from '../../components/Header'
 import Tags from '../../components/Tags'
 import { Container, Content } from './styles'
+import { useMenu } from '../../providers/menu'
+import Menu from '../../components/Menu'
+import Aside from '../../components/aside'
 
 const Contact = () => {
+    const { modal } = useMenu()
+
     return(
         <Container>
             <Content>
+                {modal && <Menu/>}
                 <Header/>
+                <Aside/>
                 <main>
                     <span>{`<${Tags.h1}>`}</span>
                         <h1>Contato</h1>

@@ -1,16 +1,12 @@
-import { Container, Content } from "./styles";
+import { Container, Content } from "./styles.js";
 import pi from '../../assets/imgs/pi.jpg'
 import {AiFillGithub, AiOutlineLinkedin} from 'react-icons/ai'
-import { useMenu } from "../../providers/menu";
 import { useHistory } from "react-router-dom";
 
-const Menu = () => {
-    const { closeModal } = useMenu()
-
+const Aside = () => {
     const history = useHistory()
     
     const handleRedirect = (page) =>{
-        closeModal()
         return history.push(`${page}`)
     }
 
@@ -18,14 +14,13 @@ const Menu = () => {
         <Container>
                 <Content>
                     <header>
-                        <label onClick={closeModal}>X</label>
                         <img alt="Logo" src={pi} onClick={() => handleRedirect("/")}/>
                         <div>
                             <h1>Luiz Felipe de Faria</h1>
                             <p>Desenvolvedor web</p>
                         </div>
                     </header>
-                    <main>
+                    <section>
                         <div>
                             <h4 onClick={() => handleRedirect('/profile')}>Sobre mim</h4>
                             <h4 onClick={() => handleRedirect('/projects')}>Projetos</h4>
@@ -36,10 +31,11 @@ const Menu = () => {
                             <AiFillGithub size={30}/>
                             <AiOutlineLinkedin size={30}/>
                         </div>
-                    </main>
+                    </section>
                 </Content>
         </Container>
     )
 }
 
-export default Menu
+export default Aside
+

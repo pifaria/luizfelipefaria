@@ -1,13 +1,20 @@
+import Aside from "../../components/aside"
 import Catalogue from "../../components/catalogue"
 import Header from "../../components/Header"
+import Menu from "../../components/Menu"
 import Tags from "../../components/Tags"
+import { useMenu } from "../../providers/menu"
 import { Container, Content } from "./styles"
 
 const Profile = () => {
+    const { modal } = useMenu()
+
     return(
         <Container>
             <Content>
+                {modal && <Menu/>}
                 <Header/>
+                <Aside/>
                 <main>
                     <span>{`<${Tags.h1}>`}</span>
                         <h1>Eu, eu mesmo e o Pi</h1>

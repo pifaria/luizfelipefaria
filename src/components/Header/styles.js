@@ -7,6 +7,10 @@ export const Container = styled.header`
     display: flex;
     justify-content: center;
 
+    @media (min-width: 700px){
+        display: none;
+    }
+
 `
 
 export const Content = styled.div`
