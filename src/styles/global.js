@@ -42,4 +42,29 @@ export default createGlobalStyle`
     button{
         cursor: pointer;
     }
+
+    a{
+        text-decoration: none;
+        color: var(--blue);
+
+        :hover{
+            color: var(--purple);
+            font-size: 1.1rem;
+        }
+    }
+
+    ::-webkit-scrollbar {
+     height: 5px;
+     width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px var(--purple);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--blue);
+        border-radius: 10px;
+    }
 `

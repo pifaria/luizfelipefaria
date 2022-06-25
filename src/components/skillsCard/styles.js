@@ -6,6 +6,10 @@ export const Container = styled.section`
     padding: 10%;
     height: 300px;
     margin-top: 16px;
+
+    @media (min-width: 700px){
+        width: 50%;
+    }
 `
 
 export const Content = styled.div`

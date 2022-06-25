@@ -9,16 +9,6 @@ export const Container = styled.ul`
      height: 5px;
     }
 
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px var(--purple);
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: var(--blue);
-        border-radius: 10px;
-    }
-
     @media (min-width: 700px){
         flex-wrap: wrap;
         overflow-x: auto;
@@ -33,18 +23,33 @@ export const Container = styled.ul`
 `
 
 export const Content = styled.li`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+
+    :hover > a{
+        display: block;
+    }
+
     img{
         min-width: 200px;
         margin-right: 10px;
-        padding-bottom: 16px;
+        cursor: pointer;
 
         :hover{
             box-shadow: 0 0 1em var(--blue);
         }
     }
 
+    a{
+        display: none;
+    }
+
     @media (min-width: 700px){
         width: 33%;
+        padding: 15px;
+        margin-bottom: 36px;
     }
 
 `

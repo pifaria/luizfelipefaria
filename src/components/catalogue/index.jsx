@@ -13,17 +13,50 @@ import timMaia from '../../assets/imgs/prints/timMaia.png'
 import { Container, Content } from './styles'
 
 const shirtsPrint = [
-    agostinho,
-    brabos,
-    einstein,
-    freira,
-    gnomo,
-    jordan,
-    lhama,
-    macaco,
-    macMiller,
-    parada,
-    timMaia
+    {
+        img: agostinho,
+        href: "https://www.stoned.com.br/camiseta-masculina-vogue-"
+    },
+    {
+        img: parada,
+        href: "https://www.stoned.com.br/camiseta-masculina-parada-no-posto"
+    },
+    {
+        img: einstein,
+        href: "https://www.stoned.com.br/camiseta-masculina-acid-einstein"
+    },
+    {
+        img: timMaia,
+        href: "https://www.stoned.com.br/produto/camiseta-tim-maia.html"
+    },
+    {
+        img: gnomo,
+        href: "https://www.stoned.com.br/camiseta-masculina-gnome"
+    },
+    {
+        img: jordan,
+        href: "https://www.stoned.com.br/camiseta-masculina-stoned-jordan-"
+    },
+    {
+        img: lhama,
+        href: "https://www.stoned.com.br/camiseta-masculina-lhama"
+    },
+    {
+        img: macaco,
+        href: "https://www.stoned.com.br/camiseta-masculina-stoned-monkey"
+    },
+    {
+        img: macMiller,
+        href: "https://www.stoned.com.br/camiseta-masculina-mac-stoned-miller-"
+    },
+    {
+        img: brabos,
+        href: ""
+    },
+    {
+        img: freira,
+        href: ""
+    },
 ]
 
 const Catalogue = () =>{
@@ -31,7 +64,8 @@ const Catalogue = () =>{
         <Container>
             {shirtsPrint.map((print, index) => (
                 <Content key={index}>
-                    <img alt='estampa' src={print}/>
+                    <img alt='estampa' src={print.img}/>
+                    <a href={print.href} target="_blank" rel="noreferrer">Ver no site</a>
                 </Content>
             ))}
         </Container>

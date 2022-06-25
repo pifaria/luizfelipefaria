@@ -14,7 +14,6 @@ export const Content = styled.div`
         display: flex;
         flex-direction: column;
         margin-top: 32px;
-
         h1{
             color: var(--blue);
         }
@@ -33,6 +32,10 @@ export const Content = styled.div`
 
         main{
             width: 65%;
+
+            article{
+                font-size: 1rem;
+            }
         }
     }
 `

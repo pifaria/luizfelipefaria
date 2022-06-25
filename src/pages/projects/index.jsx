@@ -2,17 +2,21 @@ import Aside from "../../components/aside";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 import ProjectsList from "../../components/projectsList";
+import ProjectsModal from "../../components/projectsModal";
 import Tags from "../../components/Tags";
 import { useMenu } from "../../providers/menu";
+import { useProjects } from "../../providers/projects";
 import { Container, Content } from "./styles";
 
 const Projects = () =>{
     const { modal } = useMenu()
+    const { projects } = useProjects()
 
     return(
         <Container>
             <Content>
                 {modal && <Menu/>}
+                {projects && <ProjectsModal/>}
                 <Header/>
                 <Aside/>
                 <main>

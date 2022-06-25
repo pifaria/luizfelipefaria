@@ -9,6 +9,7 @@ export const Content = styled.li`
     display: flex;
     flex-direction: column;
     margin-top: 45px;
+    cursor: pointer;
 
     h2{
         color: var(--blue);
@@ -27,7 +28,4 @@ export const Content = styled.li`
         display: none;
     }
     
-    :hover > article{
-        display: block;
-    }
 `

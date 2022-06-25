@@ -40,8 +40,7 @@ const Skills = () => {
                         </SkillsCard>
                         <SkillsCard title="Fullstack" date="09/2021 - 11/2022">
                                 <li>- SQL</li>
-                                <li>- Python</li>
-                                <li>- API REST</li>
+                                <li>- Postgres</li>
                         </SkillsCard>
                     </div>
                 </main>

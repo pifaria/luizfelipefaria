@@ -28,8 +28,12 @@ const Aside = () => {
                             <h4 onClick={() => handleRedirect('/skills')}>Skills</h4>
                         </div>
                         <div className="icons">
-                            <AiFillGithub size={30}/>
-                            <AiOutlineLinkedin size={30}/>
+                            <a href="https://github.com/pifaria" target="_blank" rel="noreferrer">
+                                <AiFillGithub size={30}/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/luiz-felipe-faria-machado/" target="_blank" rel="noreferrer">
+                                <AiOutlineLinkedin size={30}/>
+                            </a>
                         </div>
                     </section>
                 </Content>

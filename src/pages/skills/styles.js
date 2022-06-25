@@ -37,6 +37,10 @@ export const Content = styled.div`
                 display: flex;
                 
             }
+
+            p{
+                font-size: 1rem;
+            }
         }
     }
 

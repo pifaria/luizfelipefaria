@@ -1,9 +1,12 @@
 import { MenuProvider } from "./menu"
+import { ProjectsProvider } from "./projects"
 
 const Providers = ({children}) => {
     return(
         <MenuProvider>
-            {children}
+            <ProjectsProvider>
+                {children}
+            </ProjectsProvider>
         </MenuProvider>
     )
 }
